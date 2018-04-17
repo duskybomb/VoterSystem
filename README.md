@@ -1,4 +1,9 @@
 # VoterSystem
 Java project for OOPs Course second semester.
 
-To be submitted to Mr. Anjani
+## Testing
+```
+$ git clone https://github.com/duksybomb/VoterSystem.git
+$ cd VoterSystem/jar
+$ java -jar VotinGUI.jar
+```
