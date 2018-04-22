@@ -46,9 +46,6 @@ public class Home extends javax.swing.JFrame {
         designLabel = new javax.swing.JLabel();
         leftbottomPanel = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
-        jPanel11 = new javax.swing.JPanel();
-        jPanel13 = new javax.swing.JPanel();
-        jPanel14 = new javax.swing.JPanel();
         userLeftPanel = new javax.swing.JPanel();
         titleLabel1 = new javax.swing.JLabel();
         subTitleLabel1 = new javax.swing.JLabel();
@@ -63,6 +60,15 @@ public class Home extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         logoutPanel = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
+        jPanel5 = new javax.swing.JPanel();
+        jLabel16 = new javax.swing.JLabel();
+        jPanel6 = new javax.swing.JPanel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
         adminLeftPanel = new javax.swing.JPanel();
         titleLabel2 = new javax.swing.JLabel();
         subTitleLabel2 = new javax.swing.JLabel();
@@ -76,6 +82,8 @@ public class Home extends javax.swing.JFrame {
         jLabel14 = new javax.swing.JLabel();
         logoutPanel1 = new javax.swing.JPanel();
         jLabel15 = new javax.swing.JLabel();
+        resetVotePanel = new javax.swing.JPanel();
+        jLabel21 = new javax.swing.JLabel();
         rightPanel = new javax.swing.JPanel();
         loginPanel = new javax.swing.JPanel();
         exitPanel = new javax.swing.JPanel();
@@ -116,14 +124,19 @@ public class Home extends javax.swing.JFrame {
         contentPanel.setBackground(new java.awt.Color(255, 255, 255));
         contentPanel.setLayout(new java.awt.CardLayout());
 
-        homePanel.setBackground(new java.awt.Color(255, 255, 255));
+        homePanel.setBackground(new java.awt.Color(200, 0, 255));
 
-        titleLabel.setFont(new java.awt.Font("DejaVu Sans Light", 0, 18)); // NOI18N
+        titleLabel.setFont(new java.awt.Font("DejaVu Sans Light", 1, 18)); // NOI18N
+        titleLabel.setForeground(new java.awt.Color(255, 255, 255));
         titleLabel.setText("Welcome to Clustered Vote");
 
-        subTitleLabel.setText("The Home of democracy at Cluster Innovatio Centre");
+        subTitleLabel.setFont(new java.awt.Font("Noto Sans", 1, 12)); // NOI18N
+        subTitleLabel.setForeground(new java.awt.Color(255, 255, 255));
+        subTitleLabel.setText("The Home of democracy at Cluster Innovation Centre");
 
-        designLabel.setText("Designed and Developed by: Harshit Joshi");
+        designLabel.setFont(new java.awt.Font("Noto Sans", 1, 12)); // NOI18N
+        designLabel.setForeground(new java.awt.Color(255, 255, 255));
+        designLabel.setText("<html>\nGuide for this application:\n<ul>\n<li>Admin Panel\n<ul>\n<li>Admin can start or stop the voting\n<li>Admin can view the results at any point of time, <br>\nirrespective of the status of voting.\n</ul>\n<li>User Panel\n<ul>\n<li>When voting is live, user can vote for their favourite candidate <br>\nbut cannot view resuts.\n<li>When voting is NOT live, user cannot vote but can view the resuts.\n</u>\n</ul>\n</html>");
 
         leftbottomPanel.setBackground(new java.awt.Color(137, 17, 156));
         leftbottomPanel.setForeground(new java.awt.Color(255, 255, 255));
@@ -136,55 +149,13 @@ public class Home extends javax.swing.JFrame {
         leftbottomPanel.setLayout(leftbottomPanelLayout);
         leftbottomPanelLayout.setHorizontalGroup(
             leftbottomPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, leftbottomPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 311, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 311, Short.MAX_VALUE)
         );
         leftbottomPanelLayout.setVerticalGroup(
             leftbottomPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(leftbottomPanelLayout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, leftbottomPanelLayout.createSequentialGroup()
                 .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(0, 0, 0))
-        );
-
-        jPanel11.setBackground(new java.awt.Color(184, 158, 181));
-
-        javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
-        jPanel11.setLayout(jPanel11Layout);
-        jPanel11Layout.setHorizontalGroup(
-            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 46, Short.MAX_VALUE)
-        );
-        jPanel11Layout.setVerticalGroup(
-            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 124, Short.MAX_VALUE)
-        );
-
-        jPanel13.setBackground(new java.awt.Color(172, 103, 168));
-
-        javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
-        jPanel13.setLayout(jPanel13Layout);
-        jPanel13Layout.setHorizontalGroup(
-            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 43, Short.MAX_VALUE)
-        );
-        jPanel13Layout.setVerticalGroup(
-            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 52, Short.MAX_VALUE)
-        );
-
-        jPanel14.setBackground(new java.awt.Color(183, 34, 154));
-
-        javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
-        jPanel14.setLayout(jPanel14Layout);
-        jPanel14Layout.setHorizontalGroup(
-            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 31, Short.MAX_VALUE)
-        );
-        jPanel14Layout.setVerticalGroup(
-            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 34, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout homePanelLayout = new javax.swing.GroupLayout(homePanel);
@@ -192,43 +163,32 @@ public class Home extends javax.swing.JFrame {
         homePanelLayout.setHorizontalGroup(
             homePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(homePanelLayout.createSequentialGroup()
-                .addGap(52, 52, 52)
-                .addGroup(homePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(designLabel)
-                    .addComponent(subTitleLabel)
-                    .addComponent(titleLabel))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(homePanelLayout.createSequentialGroup()
                 .addGroup(homePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(leftbottomPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(homePanelLayout.createSequentialGroup()
-                        .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(0, 319, Short.MAX_VALUE))
+                        .addGap(58, 58, 58)
+                        .addGroup(homePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(subTitleLabel)
+                            .addComponent(titleLabel)
+                            .addComponent(designLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(0, 96, Short.MAX_VALUE))
         );
         homePanelLayout.setVerticalGroup(
             homePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(homePanelLayout.createSequentialGroup()
-                .addGroup(homePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(56, 56, 56)
+                .addGap(152, 152, 152)
                 .addComponent(titleLabel)
                 .addGap(18, 18, 18)
                 .addComponent(subTitleLabel)
                 .addGap(18, 18, 18)
                 .addComponent(designLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(61, 61, 61)
                 .addComponent(leftbottomPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         contentPanel.add(homePanel, "card2");
 
-        userLeftPanel.setBackground(new java.awt.Color(255, 255, 255));
+        userLeftPanel.setBackground(new java.awt.Color(250, 250, 250));
 
         titleLabel1.setFont(new java.awt.Font("DejaVu Sans Light", 0, 18)); // NOI18N
         titleLabel1.setText("User Login");
@@ -246,26 +206,26 @@ public class Home extends javax.swing.JFrame {
         leftbottomPanel1.setLayout(leftbottomPanel1Layout);
         leftbottomPanel1Layout.setHorizontalGroup(
             leftbottomPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, leftbottomPanel1Layout.createSequentialGroup()
+            .addGroup(leftbottomPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, 311, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, 287, Short.MAX_VALUE)
+                .addGap(79, 79, 79))
         );
         leftbottomPanel1Layout.setVerticalGroup(
             leftbottomPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(leftbottomPanel1Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, leftbottomPanel1Layout.createSequentialGroup()
                 .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(0, 0, 0))
         );
 
         buttonGroup1.add(jRadioButton1);
-        jRadioButton1.setText("Candidate 1");
+        jRadioButton1.setText("Prakhar Aggarwal");
 
         buttonGroup1.add(jRadioButton3);
-        jRadioButton3.setText("Candidate 3");
+        jRadioButton3.setText("Hardik Kapoor");
 
         buttonGroup1.add(jRadioButton2);
-        jRadioButton2.setText("Candidate 2");
+        jRadioButton2.setText("Mayank Malik");
 
         votePanel.setBackground(new java.awt.Color(122, 1, 122));
         votePanel.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -289,7 +249,7 @@ public class Home extends javax.swing.JFrame {
         votePanelLayout.setHorizontalGroup(
             votePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, votePanelLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(22, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGap(21, 21, 21))
         );
@@ -354,34 +314,102 @@ public class Home extends javax.swing.JFrame {
             .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 29, Short.MAX_VALUE)
         );
 
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/votingui/prakhar.jpg"))); // NOI18N
+        jLabel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(144, 0, 173), 4));
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/votingui/mayank.jpg"))); // NOI18N
+        jLabel16.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(144, 0, 173), 4));
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/votingui/hard.jpg"))); // NOI18N
+        jLabel17.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(144, 0, 173), 4));
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        jLabel18.setText("<html>\nCurrent CR\n<br>No one Likes him\n</html>");
+
+        jLabel19.setText("<html>\nChill person\n<br>\nLow Attendance\n</html>");
+
+        jLabel20.setText("<html>\nHardworking person\n<br>\nReally Sweet\n</html>");
+
         javax.swing.GroupLayout userLeftPanelLayout = new javax.swing.GroupLayout(userLeftPanel);
         userLeftPanel.setLayout(userLeftPanelLayout);
         userLeftPanelLayout.setHorizontalGroup(
             userLeftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(userLeftPanelLayout.createSequentialGroup()
-                .addComponent(leftbottomPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 319, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, userLeftPanelLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(logoutPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(userLeftPanelLayout.createSequentialGroup()
                 .addGap(52, 52, 52)
                 .addGroup(userLeftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(userLeftPanelLayout.createSequentialGroup()
-                        .addGroup(userLeftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jRadioButton2)
-                            .addComponent(jRadioButton1)
-                            .addComponent(subTitleLabel1)
-                            .addGroup(userLeftPanelLayout.createSequentialGroup()
-                                .addGroup(userLeftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(votePanel, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jRadioButton3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGap(18, 18, 18)
-                                .addComponent(resultPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(subTitleLabel1)
+                        .addContainerGap(419, Short.MAX_VALUE))
                     .addGroup(userLeftPanelLayout.createSequentialGroup()
-                        .addComponent(titleLabel1)
+                        .addGroup(userLeftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(titleLabel1)
+                            .addGroup(userLeftPanelLayout.createSequentialGroup()
+                                .addGroup(userLeftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jRadioButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGroup(userLeftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(userLeftPanelLayout.createSequentialGroup()
+                                        .addGap(37, 37, 37)
+                                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(userLeftPanelLayout.createSequentialGroup()
+                                        .addGap(46, 46, 46)
+                                        .addGroup(userLeftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jRadioButton2))))
+                                .addGap(35, 35, 35)
+                                .addGroup(userLeftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(userLeftPanelLayout.createSequentialGroup()
+                                        .addGap(12, 12, 12)
+                                        .addGroup(userLeftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jRadioButton3)
+                                            .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                            .addGroup(userLeftPanelLayout.createSequentialGroup()
+                                .addComponent(votePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(34, 34, 34)
+                                .addComponent(resultPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(userLeftPanelLayout.createSequentialGroup()
+                                .addGap(12, 12, 12)
+                                .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(0, 0, Short.MAX_VALUE))))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, userLeftPanelLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(logoutPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(userLeftPanelLayout.createSequentialGroup()
+                .addComponent(leftbottomPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         userLeftPanelLayout.setVerticalGroup(
             userLeftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -391,26 +419,37 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(titleLabel1)
                 .addGap(18, 18, 18)
                 .addComponent(subTitleLabel1)
-                .addGap(18, 18, 18)
-                .addComponent(jRadioButton1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(userLeftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(userLeftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jRadioButton1)
+                    .addComponent(jRadioButton2)
+                    .addComponent(jRadioButton3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jRadioButton2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jRadioButton3)
-                .addGap(34, 34, 34)
                 .addGroup(userLeftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(userLeftPanelLayout.createSequentialGroup()
-                        .addComponent(votePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 198, Short.MAX_VALUE)
+                        .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(userLeftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(votePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(resultPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(leftbottomPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(userLeftPanelLayout.createSequentialGroup()
-                        .addComponent(resultPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))))
+                        .addGap(10, 10, 10)
+                        .addGroup(userLeftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap())))
         );
 
         contentPanel.add(userLeftPanel, "card2");
 
-        adminLeftPanel.setBackground(new java.awt.Color(255, 255, 255));
+        adminLeftPanel.setBackground(new java.awt.Color(250, 250, 250));
 
         titleLabel2.setFont(new java.awt.Font("DejaVu Sans Light", 0, 18)); // NOI18N
         titleLabel2.setText("Admin Login");
@@ -533,6 +572,37 @@ public class Home extends javax.swing.JFrame {
             .addComponent(jLabel15, javax.swing.GroupLayout.DEFAULT_SIZE, 29, Short.MAX_VALUE)
         );
 
+        resetVotePanel.setBackground(new java.awt.Color(122, 1, 122));
+        resetVotePanel.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                resetVotePanelMousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                resetVotePanelMouseReleased(evt);
+            }
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                resetVotePanelMouseClicked(evt);
+            }
+        });
+
+        jLabel21.setFont(new java.awt.Font("DejaVu Sans Light", 0, 18)); // NOI18N
+        jLabel21.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel21.setText("RESET");
+
+        javax.swing.GroupLayout resetVotePanelLayout = new javax.swing.GroupLayout(resetVotePanel);
+        resetVotePanel.setLayout(resetVotePanelLayout);
+        resetVotePanelLayout.setHorizontalGroup(
+            resetVotePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(resetVotePanelLayout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jLabel21)
+                .addContainerGap(21, Short.MAX_VALUE))
+        );
+        resetVotePanelLayout.setVerticalGroup(
+            resetVotePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel21, javax.swing.GroupLayout.DEFAULT_SIZE, 42, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout adminLeftPanelLayout = new javax.swing.GroupLayout(adminLeftPanel);
         adminLeftPanel.setLayout(adminLeftPanelLayout);
         adminLeftPanelLayout.setHorizontalGroup(
@@ -551,8 +621,10 @@ public class Home extends javax.swing.JFrame {
                             .addGroup(adminLeftPanelLayout.createSequentialGroup()
                                 .addComponent(yesNoPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(resultPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addContainerGap(377, Short.MAX_VALUE))
+                                .addComponent(resultPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(29, 29, 29)
+                                .addComponent(resetVotePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap(250, Short.MAX_VALUE))
                     .addGroup(adminLeftPanelLayout.createSequentialGroup()
                         .addComponent(titleLabel2)
                         .addGap(0, 0, Short.MAX_VALUE))))
@@ -575,8 +647,10 @@ public class Home extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(adminLeftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(adminLeftPanelLayout.createSequentialGroup()
-                        .addComponent(yesNoPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 242, Short.MAX_VALUE)
+                        .addGroup(adminLeftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(yesNoPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(resetVotePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 247, Short.MAX_VALUE)
                         .addComponent(leftbottomPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(adminLeftPanelLayout.createSequentialGroup()
                         .addComponent(resultPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -846,7 +920,7 @@ public class Home extends javax.swing.JFrame {
             inactiveRightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(inactiveRightLayout.createSequentialGroup()
                 .addComponent(exitPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 496, Short.MAX_VALUE))
+                .addGap(0, 501, Short.MAX_VALUE))
         );
 
         rightPanel.add(inactiveRight, "card2");
@@ -883,7 +957,7 @@ public class Home extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(246, 222, 254));
 
-        jLabel9.setText("Candidate 1");
+        jLabel9.setText("Prakhar Aggarwal");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -892,7 +966,7 @@ public class Home extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel9)
-                .addContainerGap(181, Short.MAX_VALUE))
+                .addContainerGap(148, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -904,7 +978,7 @@ public class Home extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(126, 17, 132));
 
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setText("Candidate 2");
+        jLabel10.setText("Mayank Malik");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -924,7 +998,7 @@ public class Home extends javax.swing.JFrame {
 
         jPanel4.setBackground(new java.awt.Color(246, 222, 254));
 
-        jLabel11.setText("Candidate 3");
+        jLabel11.setText("Hardik Kapoor");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -988,7 +1062,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(resultRightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(cand3vote))
-                .addGap(0, 330, Short.MAX_VALUE))
+                .addGap(0, 335, Short.MAX_VALUE))
         );
 
         rightPanel.add(resultRight, "card2");
@@ -1009,7 +1083,7 @@ public class Home extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 513, Short.MAX_VALUE)
+            .addGap(0, 518, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(contentPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1054,6 +1128,8 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
         String usernameEntered = usernameField.getText();
         String passwordEntered= passwordField.getText();
+        System.out.println(usernameEntered);
+        System.out.println(passwordEntered);
         if (adminRadio.isSelected()) {
             if (usernameEntered.equals("admin") && passwordEntered.equals("admin")) {
                 contentPanel.removeAll();
@@ -1078,66 +1154,29 @@ public class Home extends javax.swing.JFrame {
             }
         }   
         else {
-            if (usernameEntered.equals("harshit") && passwordEntered.equals("admin")) {
-                contentPanel.removeAll();
-                contentPanel.repaint();
-                contentPanel.revalidate();
-        
-                contentPanel.add(userLeftPanel);
-                contentPanel.repaint();
-                contentPanel.revalidate();
-            
-                rightPanel.removeAll();
-                rightPanel.repaint();
-                rightPanel.revalidate();
-            
-                rightPanel.add(inactiveRight);
-                rightPanel.repaint();
-                rightPanel.revalidate();
-                
-                voterID = 0;
-            
+            for (int i=0; i<44; ++i){
+                if (usernameEntered.equals(voterDetail.getVoterUser(i)) && passwordEntered.equals(voterDetail.getVoterPass(i))) {
+                    contentPanel.removeAll();
+                    contentPanel.repaint();
+                    contentPanel.revalidate();
+
+                    contentPanel.add(userLeftPanel);
+                    contentPanel.repaint();
+                    contentPanel.revalidate();
+
+                    rightPanel.removeAll();
+                    rightPanel.repaint();
+                    rightPanel.revalidate();
+
+                    rightPanel.add(inactiveRight);
+                    rightPanel.repaint();
+                    rightPanel.revalidate();
+
+                    voterID = i;
+                    break;
+                }
             }
-            else if (usernameEntered.equals("manas") && passwordEntered.equals("admin")) {
-                contentPanel.removeAll();
-                contentPanel.repaint();
-                contentPanel.revalidate();
-        
-                contentPanel.add(userLeftPanel);
-                contentPanel.repaint();
-                contentPanel.revalidate();
-            
-                rightPanel.removeAll();
-                rightPanel.repaint();
-                rightPanel.revalidate();
-            
-                rightPanel.add(inactiveRight);
-                rightPanel.repaint();
-                rightPanel.revalidate();
-                
-                voterID = 1;
-            }
-            else if (usernameEntered.equals("mayank") && passwordEntered.equals("admin")) {
-                contentPanel.removeAll();
-                contentPanel.repaint();
-                contentPanel.revalidate();
-        
-                contentPanel.add(userLeftPanel);
-                contentPanel.repaint();
-                contentPanel.revalidate();
-            
-                rightPanel.removeAll();
-                rightPanel.repaint();
-                rightPanel.revalidate();
-            
-                rightPanel.add(inactiveRight);
-                rightPanel.repaint();
-                rightPanel.revalidate();
-                
-                voterID = 2;
-            
-            }
-            else {
+            if (voterID == -1){
                 JOptionPane.showMessageDialog(this, "Invalid Username or Password!", "Login error", JOptionPane.ERROR_MESSAGE);
             }
         }
@@ -1193,7 +1232,7 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
         
         if (isVoting == 1) {
-            if (voterID == 0 && voterDetail.getvoter1() == 0) {
+            if (voterDetail.getvoter(voterID) == 0) {
                 int i=0;
                 if (jRadioButton1.isSelected()){
                     candidateDetail.cand1();
@@ -1215,57 +1254,7 @@ public class Home extends javax.swing.JFrame {
                     JOptionPane.showMessageDialog(this, "Please select a candidate!", "Voting error", JOptionPane.ERROR_MESSAGE);
                 }
                 buttonGroup1.clearSelection();
-                voterDetail.voter1Voted();
-                JOptionPane.showMessageDialog(this, "Thankyou for voting", "Thanks", JOptionPane.INFORMATION_MESSAGE);
-            }
-            else if (voterID == 1 && voterDetail.getvoter2() == 0) {
-                int i=0;
-                if (jRadioButton1.isSelected()){
-                    candidateDetail.cand1();
-                    cand1vote.setText(Integer.toString(candidateDetail.getcan1()));
-                    System.out.print(candidateDetail.getcan1());
-                    System.out.print(++i);
-                }
-                else if (jRadioButton2.isSelected()){
-                    candidateDetail.cand2();
-                    cand2vote.setText(Integer.toString(candidateDetail.getcan2()));
-                    System.out.print(candidateDetail.getcan2());
-                }
-                else if (jRadioButton3.isSelected()){
-                    candidateDetail.cand3();
-                    cand3vote.setText(Integer.toString(candidateDetail.getcan3()));
-                    System.out.print(candidateDetail.getcan3());
-                }
-                else {
-                    JOptionPane.showMessageDialog(this, "Please select a candidate!", "Voting error", JOptionPane.ERROR_MESSAGE);
-                }
-                buttonGroup1.clearSelection();
-                voterDetail.voter2Voted();
-                JOptionPane.showMessageDialog(this, "Thankyou for voting", "Thanks", JOptionPane.INFORMATION_MESSAGE);
-            }
-            else if (voterID == 2 && voterDetail.getvoter3() == 0) {
-                int i=0;
-                if (jRadioButton1.isSelected()){
-                    candidateDetail.cand1();
-                    cand1vote.setText(Integer.toString(candidateDetail.getcan1()));
-                    System.out.print(candidateDetail.getcan1());
-                    System.out.print(++i);
-                }
-                else if (jRadioButton2.isSelected()){
-                    candidateDetail.cand2();
-                    cand2vote.setText(Integer.toString(candidateDetail.getcan2()));
-                    System.out.print(candidateDetail.getcan2());
-                }
-                else if (jRadioButton3.isSelected()){
-                    candidateDetail.cand3();
-                    cand3vote.setText(Integer.toString(candidateDetail.getcan3()));
-                    System.out.print(candidateDetail.getcan3());
-                }
-                else {
-                    JOptionPane.showMessageDialog(this, "Please select a candidate!", "Voting error", JOptionPane.ERROR_MESSAGE);
-                }
-                buttonGroup1.clearSelection();
-                voterDetail.voter3Voted();
+                voterDetail.voterVoted(voterID);
                 JOptionPane.showMessageDialog(this, "Thankyou for voting", "Thanks", JOptionPane.INFORMATION_MESSAGE);
             }
             else {
@@ -1371,6 +1360,30 @@ public class Home extends javax.swing.JFrame {
         resultPanel1.setBackground(new java.awt.Color(122,1,122));
     }//GEN-LAST:event_resultPanel1MouseReleased
 
+    private void resetVotePanelMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_resetVotePanelMousePressed
+        // TODO add your handling code here:
+        resetVotePanel.setBackground(new java.awt.Color(40,0,48));
+    }//GEN-LAST:event_resetVotePanelMousePressed
+
+    private void resetVotePanelMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_resetVotePanelMouseReleased
+        // TODO add your handling code here:
+        resetVotePanel.setBackground(new java.awt.Color(122,1,122));
+    }//GEN-LAST:event_resetVotePanelMouseReleased
+
+    private void resetVotePanelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_resetVotePanelMouseClicked
+        // TODO add your handling code here:
+        candidateDetail.cand1Reset();
+        cand1vote.setText(Integer.toString(0));
+        candidateDetail.cand2Reset();
+        cand2vote.setText(Integer.toString(0));
+        candidateDetail.cand3Reset();
+        cand2vote.setText(Integer.toString(0));
+        
+        voterDetail.voterReset();
+        
+        System.out.print(candidateDetail.getcan1());
+    }//GEN-LAST:event_resetVotePanelMouseClicked
+
     private void resultPanelMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_resultPanelMousePressed
         // TODO add your handling code here:
         resultPanel.setBackground(new java.awt.Color(40,0,48));
@@ -1378,7 +1391,7 @@ public class Home extends javax.swing.JFrame {
 
     private void resultPanelMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_resultPanelMouseReleased
         // TODO add your handling code here:
-        resultPanel.setBackground(new java.awt.Color(40,0,48));
+        resultPanel.setBackground(new java.awt.Color(122,1,122));
     }//GEN-LAST:event_resultPanelMouseReleased
     
     /**
@@ -1440,19 +1453,26 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel11;
-    private javax.swing.JPanel jPanel13;
-    private javax.swing.JPanel jPanel14;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JRadioButton jRadioButton2;
     private javax.swing.JRadioButton jRadioButton3;
@@ -1467,6 +1487,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPasswordField passwordField;
     private javax.swing.JPanel passwordFocusPanel;
     private javax.swing.JPanel resetPanel;
+    private javax.swing.JPanel resetVotePanel;
     private javax.swing.JPanel resultPanel;
     private javax.swing.JPanel resultPanel1;
     private javax.swing.JPanel resultRight;

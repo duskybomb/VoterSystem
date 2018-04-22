@@ -29,6 +29,16 @@ public class Candidate {
         candVotes[2]++;
     }
     
+    public void cand1Reset() {
+        candVotes[0] = 0;
+    }
+    public void cand2Reset() {
+        candVotes[1] = 0;
+    }
+    public void cand3Reset() {
+        candVotes[2] = 0;
+    }
+    
     public int getcan1(){
         return candVotes[0];
     }

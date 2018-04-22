@@ -8,6 +8,8 @@ $ cd VoterSystem/jar
 $ java -jar VotinGUI.jar
 ```
 
-## Screen Shot
-
- ![Screenshot](screenshot.png)
+## Screen Shots
+### Login Panel
+ ![Screenshot Login Panel](screenshotLogin.png)
+### Voting Panel
+ ![Screenshot User Panel](screenshotUser.png)
